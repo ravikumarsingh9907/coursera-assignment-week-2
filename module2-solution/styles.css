@@ -38,6 +38,7 @@
   font-size: 1rem;
 }
 
+/* title background-color */
 .first {
   background-color: hotpink;
 }
@@ -64,7 +65,7 @@ p {
   }
 }
 
-/* for medium size browser winow */
+/* for medium size browser winow---------------------------- */
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
     width: 90%;
