@@ -1,0 +1,78 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: "Indie Flower", cursive;
+}
+
+.main-heading {
+  width: 100%;
+  text-align: center;
+  margin: 1rem 0rem;
+  padding: 1rem;
+  font-size: 1.8rem;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.section-cm {
+  background-color: grey;
+  border: 1px solid black;
+  box-sizing: border-box;
+  padding: 10px;
+  position: relative;
+  margin: 0.5rem;
+}
+
+.heading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-top: none;
+  border-right: none;
+  padding: 0.2rem 3rem;
+  font-size: 1rem;
+}
+
+.first {
+  background-color: hotpink;
+}
+
+.second {
+  background-color: orangered;
+}
+
+.third {
+  background-color: greenyellow;
+}
+
+p {
+  margin: 2.5rem 0.5rem 0.5rem 0.5rem;
+  font-size: 1rem;
+}
+
+/* for desktop size browsers-------------------------------- */
+@media (min-width: 992px) {
+  .container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* for medium size browser winow */
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section-3 {
+    grid-column: 1/3;
+  }
+}
