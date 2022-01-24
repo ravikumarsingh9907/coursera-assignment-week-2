@@ -1,0 +1,120 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+
+.navbar-container {
+  background: grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.3rem 1rem;
+}
+
+.toggle-bar {
+  border-style: none;
+  outline: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+}
+
+.toggle-bar i {
+  font-size: 35px;
+  background: transparent;
+}
+
+.menu-list {
+  display: none;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: auto;
+  text-align: center;
+}
+
+.show-list {
+  display: block;
+  height: 133px;
+}
+
+.list li {
+  border-bottom: 1px solid black;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.link-list {
+  text-decoration: blink;
+  color: black;
+  font-weight: 600;
+}
+
+/* styles for body of the website */
+.main-heading {
+  width: 100%;
+  text-align: center;
+  margin: 1rem 0rem;
+  padding: 1rem;
+  font-size: 1.8rem;
+}
+
+.body-container {
+  width: 90%;
+  margin: auto;
+}
+
+.section-cm {
+  background-color: grey;
+  border: 1px solid black;
+  box-sizing: border-box;
+  padding: 10px;
+  position: relative;
+  margin: 0.5rem;
+  border-radius: 10px;
+}
+
+.heading {
+  text-align: center;
+  box-sizing: border-box;
+  border-top: none;
+  border-right: none;
+  padding: 0.2rem 3rem;
+  font-size: 1rem;
+}
+
+p {
+  margin: 0.6rem 0.5rem 0.5rem 0.5rem;
+  font-size: 1rem;
+}
+
+/* for desktop size browsers-------------------------------- */
+@media (min-width: 992px) {
+  .body-container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .toggle-bar {
+    display: none;
+  }
+}
+
+/* for medium size browser winow---------------------------- */
+@media (min-width: 768px) and (max-width: 991px) {
+  .body-container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section-3 {
+    grid-column: 1/3;
+  }
+
+  .toggle-bar {
+    display: none;
+  }
+}
